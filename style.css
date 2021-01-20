@@ -622,6 +622,13 @@ body{
     transform: scale(1.3);
 }
 
+@media screen and (max-width: 1000px) {
+    .aoin .caoin .pofaoi{
+        font-size: 3em;
+    }
+}
+
+
 /*nav{
     background-color: black;
     color: white;
