@@ -1,0 +1,635 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(maxresdefault.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+}
+
+
+
+
+
+
+.theul{
+        position: fixed;
+        right: 0;
+}
+@media screen and (max-width: 1200px){
+    .theul{
+        display: none;
+    }
+    
+}
+
+.theul li {
+    list-style-type: none;
+    height: 13px;
+    width: 13px;
+    background-color: white;
+    margin: 15px 19px 0;
+    border-radius: 50%;
+    border: solid rgb(119, 108, 108) 1px;
+    transform: translateY(290px);
+    opacity: 0.4;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                  INTRO SECTION              */
+
+.Intro{
+    background-image: url(forintro.png);
+    background-size: cover ;
+    margin: 0; padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    /*border-bottom: solid black 1px ;*/
+}
+.Intro p{
+    padding: 0px;
+    margin: 0px;
+    color: rgba(255, 255, 255, 0.774);
+}
+.hey{
+    font-size: 2em;
+    font-style: italic;
+}
+.name{
+    position: relative;
+    color: rgb(221, 221, 221);
+    height: 60px;
+    width: 455px;
+    
+    font-size: 3.5em;
+    text-transform: uppercase;
+    font-weight: 525;
+    overflow: hidden;
+}
+/*.underline{
+    height: 60px;
+    width: 455px;
+    border-bottom: 4px solid #ffffff;
+    position: absolute;
+    bottom: 44%;
+    right: 65%;
+    bottom: 0;
+    right: 100%;
+    transition-duration: 0.9s; 
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                    ABOUTS SECTION               */
+
+.content{
+    margin: 0;
+    padding: 0px 0px 10px 0px;
+    display: flex;
+    /* align-items: center;*/
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    flex-direction: row;
+}
+.content .about{
+    padding-left: 30px;
+    width: 30%;
+    font-size: 15em;
+    font-style: italic;
+    color: rgb(46, 45, 45);
+}
+.content .overlay{
+    position: absolute;
+    left: 56px;
+    margin: 0px;
+    padding: 0px;
+    width: 29%;
+    font-size: 15em;
+    font-style: italic;
+    color: rgb(66, 25, 66);
+    
+
+}
+.content .overlay1{
+    position: absolute;
+    left: 84px;
+    margin: 0px;
+    padding: 0px;
+    width: 30%;
+    font-size: 15em;
+    font-style: italic;
+    color: purple;
+}
+.content .partition{
+    position: absolute;
+    left: 112px;
+    margin: 0px;
+    padding: 0px;
+    width: 30%;
+    font-size: 15em;
+    font-style: italic;
+    color: rgb(192, 39, 212);
+    /*border-right: rgba(255, 255, 255, 0.212) solid 3px ;*/   
+}
+
+.sabout{
+    
+    text-align: center;
+    position: absolute;
+    font-size: 6em;
+    right: 0;
+    display: none;
+    text-shadow: purple -12px 0px;
+}
+
+
+
+.content .allabout{
+    padding: 80px 180px 0px 290px;
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    font-size: 18px;
+    color: rgba(251, 253, 255, 0.884);
+    /*width: 0%;*/
+    letter-spacing: 1px;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.content .allabout p {
+    margin: 0; padding: 0;
+}
+
+.content .allabout .bolder{
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 450;
+}
+.content .allabout .others{
+    padding-bottom: 30px;
+    
+}
+.content ul{
+    margin: 0; padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.content ul li{
+    padding-right: 30px;
+}
+.content .allabout ul img{
+   height: 50px;  
+   transition-duration: 0.2s ;
+}
+.content .allabout li img:hover{
+    transform: scale(1.3);
+}
+
+
+@media screen and (max-width: 1200px){
+    .content .about{
+        display: none;
+    }
+    .content .overlay{
+        display: none;
+    }
+    .content .overlay1{
+        display: none;
+    }
+    .content .partition{
+        display: none;
+    }
+    .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .content .allabout{
+        padding: 0 ;
+        width: 70%;
+        display: flex;
+        
+    }
+    .leborder{
+        display: block ;
+    }
+    .sabout{
+        position: absolute;
+        display: block;
+        color: rgb(167, 57, 201);
+        font-weight: bold;
+        bottom: 0;
+
+    }
+    .content .allabout ul img{
+        height: 43px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                         EDUCATION SECTION                            */
+
+.eduse {
+    
+    margin: 0; padding: 0;
+    display: flex;
+    background-color: rgb(228, 228, 228);
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    border-bottom: rgb(0, 0, 0) 3px solid;
+}
+.lborder{
+    position: absolute;
+    width: 2px;
+    height: 47vh;
+    background-color: rgb(139, 136, 136);
+    opacity: 0.5;
+    transform: translateY(-45%);
+    right: 25px;
+    display: none;
+}
+/*.edu{
+    opacity: 0.5;
+    text-align: center;
+    position: absolute;
+    transform:  translateY(60%);
+    font-size: 2em;
+    right: 13px;
+    
+}*/
+.edu{
+    display: flex;
+    align-items: center;
+    text-align: center;    
+    font-size: 3.5em;
+    height: 85%;
+    width: 10%;
+    margin-right:9px ;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 20%;
+    font-weight: bold;
+    padding-left: 2%;
+}
+
+.eduse .contents{
+    margin: 0;padding: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.eduse .contents div{
+    position: relative;
+    background-color: rgb(208, 188, 245);
+    height: 33.3%;
+    width: 90%;
+    margin: 0 0 10px 0;
+    padding: 0;
+    display: inline-block;
+    padding: 12px;
+}
+
+.contents div h2{
+    margin: 0 ; padding: 0;
+}
+.contents div .duration{
+    margin: 0; padding-top: 5px ;
+    font-size: 16px;
+}
+
+
+@media screen and (max-width: 1200px){
+ .edu{
+     left: 0;
+     height: 100%;
+     width: 45%;
+     background-color: rgb(140, 35, 209);
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*                    SKILLS SECTION           */
+
+
+
+
+
+
+.nsection{
+    background-image: url(forskills.png);
+    background-size: cover ;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+    border-bottom: rgb(0, 0, 0) solid 3px ;
+
+}
+
+.hskill{
+    font-family:  'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 5em;
+    position: absolute;
+    left: 0;
+    display: none;
+}
+
+.nsection .cofskills{
+    width: 40%;
+    height: 85%;
+    margin: 0;
+    padding: 0;
+}
+.cofskills div{
+    display: flex;
+    height: 19%;
+    position: relative;
+    margin-top: 6px;
+    align-items: center;
+    justify-content: center;
+}
+.cofskills div img{
+    height: 100%;
+}
+
+
+
+
+.cofskills .skill1{
+    
+    background-color: rgb(123, 143, 207);
+}
+.cofskills .skill1 div{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(123, 143, 207);
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    border: rgb(123, 143, 207) 2px solid;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.cofskills .skill1:hover div{
+    opacity: 1;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+
+
+.cofskills .skill2{
+    background-color: rgb(96, 118, 190);
+}
+.cofskills .skill2 div{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(96, 118, 190);
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    border: rgb(96, 118, 190) 2px solid;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.cofskills .skill2:hover div{
+    opacity: 1;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+
+
+
+
+.cofskills .skill3{
+    background-color: rgb(120, 120, 201);
+}
+.cofskills .skill3 div{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(120, 120, 201);
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    border: rgb(120, 120, 201) 2px solid;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.cofskills .skill3:hover div{
+    opacity: 1;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+
+.cofskills .skill4{
+    background-color: rgb(214, 214, 149);
+}
+
+.cofskills .skill4 div{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(214, 214, 149);
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    border: rgb(214, 214, 149) 2px solid;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.cofskills .skill4:hover div{
+    opacity: 1;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+
+
+.cofskills .skill5{
+    background-color: rgb(166, 224, 184);
+}
+.cofskills .skill5 div{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(166, 224, 184);
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    border: rgb(166, 224, 184) 2px solid;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.cofskills .skill5:hover div{
+    opacity: 1;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+    .nsection{
+        background-image: url(forskillsmall.png);
+        background-size: cover ;
+    }
+}
+
+
+
+
+
+/*                   AREAS OF INTERSTS                 */
+
+
+
+
+
+.aoin{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(228, 228, 228);
+    flex-direction: column;
+}
+
+.aoin .caoin{
+    height: 75%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.aoin .caoin .cholder{
+    height: 50%;
+    width: 80%;
+    font-family: sans-serif;
+}
+
+.aoin .caoin .inside{
+    display: flex;
+    align-items: center;
+    height: 30%;
+    font-size: 2.5em;
+    font-weight: 750;
+    
+}
+.aoin .caoin .pofaoi{
+    width: 75%;
+    font-size: 18px ;
+    
+}
+
+
+.aoin .end{
+    display: flex;
+    width: 100%;
+    height: 25%;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.aoin .end ul{
+    margin: 0; padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.aoin .end ul li{
+    padding-right: 30px;
+}
+.aoin .end ul img{
+   height: 50px;  
+   transition-duration: 0.2s ;
+}
+
+.aoin .end li img:hover{
+    transform: scale(1.3);
+}
+
+/*nav{
+    background-color: black;
+    color: white;
+    padding: 10px 20px 100px 0px;
+    position: relative;
+    text-indent: -40px;
+}
+nav ul{
+    display: inline;
+    
+}*/
